@@ -3,14 +3,14 @@ import firestore from 'firebase/firestore'; // eslint-disable-line no-unused-var
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: 'AIzaSyAATLfmqqwBkTXxnqmbPUNd7nOi-afqt3M',
-  authDomain: 'job-title-tags.firebaseapp.com',
-  databaseURL: 'https://job-title-tags.firebaseio.com',
-  projectId: 'job-title-tags',
-  storageBucket: 'job-title-tags.appspot.com',
-  messagingSenderId: '324531096092',
-  appId: '1:324531096092:web:84fa0424eeb6bcee6f2dd9',
-  measurementId: 'G-ZW5Z0M31YR'
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+  measurementId: ''
 };
 // Initialize Firebase
 const webJobTags = firebase.initializeApp(firebaseConfig);
