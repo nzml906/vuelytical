@@ -2,9 +2,7 @@
   <div class="index container">
     <div class="card" v-for="smoothie in smoothies" :key="smoothie.id">
       <div class="card-content">
-        <i class="material-icons delete" @click="deleteSmoothie(smoothie.id)"
-          >delete</i
-        >
+        <i class="material-icons delete" @click="deleteSmoothie(smoothie.id)">delete</i>
         <h2 class="deep-orange-text text-darken-1">{{ smoothie.ui }}</h2>
         <ul class="ingredients">
           <li v-for="(ing, index) in smoothie.ingredients" :key="index">
@@ -14,9 +12,7 @@
       </div>
 
       <span class="btn-floating btn-large halfway-fab deep-orange darken-1">
-        <router-link
-          :to="{ name: 'EditPost', params: { post_slug: smoothie.slug } }"
-        >
+        <router-link :to="{ name: 'EditPost', params: { post_slug: smoothie.slug } }">
           <i class="material-icons edit">edit</i>
         </router-link>
       </span>
@@ -26,6 +22,7 @@
 
 <script>
 import db from '../firebase/init';
+
 export default {
   data() {
     return {
