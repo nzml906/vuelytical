@@ -52,6 +52,7 @@
     "not dead"
   ],
   "prettier": {
+    "trailingComma": "none",
     "tabWidth": 2,
     "singleQuote": true
   },
